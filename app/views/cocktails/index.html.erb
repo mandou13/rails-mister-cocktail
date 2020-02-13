@@ -1,0 +1,26 @@
+<div class='block-landing-page-title' style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(https://cdn.dribbble.com/users/2367334/screenshots/6219497/dive_drib_gif2.gif)">
+
+<div class="downArrow bounce">
+  <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+</div>
+  <h1 class='landing-page-title text-center'>CoCKTaILs.</h1>
+</div>
+<div class = 'd-flex justify-content-center mt-3'>
+  <%= link_to "🍸 - Add a new Cocktail", new_cocktail_path, class: "btn btn-ghost"%>
+</div>
+<div class='row justify-content-center'>
+  <%@cocktails.each do |cocktail| %>
+  <div class='col-3'>
+    <%= link_to cocktail_path(cocktail) do %>
+      <div class=' card p-4 text-center'>
+        <div class=''>
+          <%= image_tag "tequila-sunrise.jpeg", alt: "Le Wagon", class: 'cocktail-image mb-5' %>
+        </div>
+        <p class='text-cocktail-card'>
+          <%= cocktail.name.upcase %>
+        </p>
+      </div>
+    <% end %>
+    </div>
+  <%end %>
+</div>

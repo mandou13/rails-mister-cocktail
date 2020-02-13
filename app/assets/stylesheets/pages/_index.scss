@@ -1,2 +1,125 @@
 // Import page-specific CSS files here.
 @import "home";
+
+
+.landing-page-title {
+  color: black;
+  font-size: 100px;
+  -webkit-text-stroke: 2px #7EF7C9;
+}
+
+
+.block-landing-page-title {
+  height: 100vh;
+  background-position: center;
+  padding: 300px 0;
+  background-size: cover;
+  justify-content: center;
+}
+
+.card:hover {
+  background: #FFEB49;
+}
+
+.card {
+  border-radius: 0%;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.0);
+  margin: 20px;
+  border-radius: 0%;
+  background-color: #A0D4BB;
+  // border: solid #6FD4B4 0.5px;
+}
+
+
+.cocktail-image {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+
+a {
+  color: black;
+
+  &:hover {
+    text-decoration: none;
+    color: black
+  }
+}
+
+.text-cocktail-card:active {
+  color: black;
+}
+
+
+.downArrow{
+  position: fixed;
+  bottom: 10%;
+  left: 47%;
+  size: 200px;
+}
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
